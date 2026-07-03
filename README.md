@@ -3,6 +3,9 @@
 Uma API RESTful completa, segura e escalável desenvolvida com **Java 21** e **Spring Boot 3**, projetada para gerenciar um ecossistema de clube de assinaturas de caixas de produtos (Boxes).
 
 ---
+## 🧑🏻‍🎓 Desenvolvedor:
+- ALUNO: Matheus Nunes Dantas de Sena.
+- RGM: 46315802
 
 ## 🚀 Tecnologias e Recursos Utilizados
 
