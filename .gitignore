@@ -172,7 +172,7 @@ $RECYCLE.BIN/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
+projeto/build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
