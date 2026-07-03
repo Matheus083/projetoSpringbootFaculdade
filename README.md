@@ -4,8 +4,8 @@ Uma API RESTful completa, segura e escalável desenvolvida com **Java 21** e **S
 
 ---
 ## 🧑🏻‍🎓 Desenvolvedor:
-- ALUNO: Matheus Nunes Dantas de Sena.
-- RGM: 46315802
+- **ALUNO:** Matheus Nunes Dantas de Sena.
+- **RGM:** 46315802
 
 ## 🚀 Tecnologias e Recursos Utilizados
 
