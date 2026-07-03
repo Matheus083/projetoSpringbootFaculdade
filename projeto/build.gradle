@@ -1,0 +1,53 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.5'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'br.com.projeto'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // SPRING WEB: Responsável pela criação da API REST (permite usar @RestController, @GetMapping, etc.)
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // SPRING DATA JPA: Responsável pelo acesso ao banco de dados utilizando mapeamento objeto-relacional
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // VALIDATION: Responsável pelas validações de dados nas entradas das requisições (@NotBlank, @NotNull, etc.)
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // SPRING SECURITY: Base de segurança para autenticação e controle de rotas
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    // JWT (JSON Web Token): Bibliotecas para geração, leitura e validação dos tokens de segurança
+    implementation 'io.jsonwebtoken:jjwt-api:0.12.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.5'
+
+    // SWAGGER / OPENAPI: Responsável pela geração automática da documentação interativa da API
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
+
+    // MYSQL DRIVER: Permite a conexão física e comunicação entre a nossa aplicação Java e o banco MySQL
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    // LOMBOK: Remove o código repetitivo (boilerplate), gerando getters, setters e construtores automaticamente
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // TEST: Dependência padrão para execução de testes unitários
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
